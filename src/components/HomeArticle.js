@@ -5,8 +5,8 @@ export default class HomeArticle extends React.Component {
     render(){
         return(
             <div>
-            <h1>HomeArticle</h1>
-            <img src={home} alt=""></img>
+            <h1>Creating Space</h1>
+            <img style={{width: 700}} src={home} alt=""></img>
             </div>
         )
     }

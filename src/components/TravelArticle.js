@@ -5,7 +5,7 @@ export default class TravelArticle extends React.Component {
     render(){
         return(
             <div>
-            <h1>TravelArticle</h1>
+            <h1>Travel Often</h1>
             <img src={travel} alt=""></img>
             </div>
         )

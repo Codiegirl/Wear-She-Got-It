@@ -5,6 +5,7 @@ import TravelArticle from './components/TravelArticle'
 import HealthArticle from './components/HealthArticle'
 import HomeArticle from './components/HomeArticle'
 import NavBar from './components/NavBar'
+import HomePage from './components/HomePage'
 
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
     <Router>
     <div>
       <NavBar/>
-      <FashionArticle/>
-      <TravelArticle/>
-      <HealthArticle/>
-      <HomeArticle/>
+      <Route path="/" component={HomePage} exact/>
+      <Route path="/fashion" component={FashionArticle}/>
+      <Route path="/travel" component={TravelArticle}/>
+      <Route path="/health" component={HealthArticle}/>
+      <Route path="/decor" component={HomeArticle}/>
     </div>
 
     </Router>

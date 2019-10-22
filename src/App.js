@@ -6,6 +6,7 @@ import HealthArticle from './components/HealthArticle'
 import HomeArticle from './components/HomeArticle'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
+import './App.css'
 
 
 function App() {

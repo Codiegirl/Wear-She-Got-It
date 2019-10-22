@@ -2,19 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => (
-    <nav>
-        <ul>
+    <nav className="navbar-container">
+        <ul className="navbar-links">
             <li>
-                <Link to="/fashion">Fashion</Link>
+                <Link to="/fashion" className="navbar-links">Fashion</Link>
             </li>
             <li>
-                <Link to="/travel">Travel</Link>
+                <Link to="/travel" className="navbar-links">Travel</Link>
             </li>
             <li>
-                <Link to="/health">Health</Link>
+                <Link to="/health" className="navbar-links">Health</Link>
             </li>
             <li>
-                <Link to="/home">Home</Link>
+                <Link to="/home" className="navbar-links">Home</Link>
             </li>
         </ul>
         </nav>

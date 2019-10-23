@@ -14,7 +14,7 @@ function App() {
     <Router>
     <div>
       <NavBar/>
-      <Route path="/" component={HomePage} exact/>
+      <Route path="/homepage" component={HomePage} exact/>
       <Route path="/fashion" component={FashionArticle}/>
       <Route path="/travel" component={TravelArticle}/>
       <Route path="/health" component={HealthArticle}/>

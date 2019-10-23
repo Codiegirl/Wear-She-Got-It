@@ -1,1 +1,3 @@
 Created NavBar component and installed react router dom.
+Added CSS styling to the NavBar.
+Created CSS file and added it to App.js

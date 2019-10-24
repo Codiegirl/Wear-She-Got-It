@@ -2,21 +2,63 @@
     overflow: hidden;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
     background-color: black;
+    height: 75px;
     
  }
   
-  .navbar-links {
+ .navbar-logo a{
+     color: white;
+     text-decoration: none;
+     font-size: 2rem;
+     padding: 0 1rem; /* gives the logo space from the left*/
+
+ }
+
+ .spacer{
+     flex: 1; /*takes all the available space between the logo and links*/
+ }
+
+ .navbar-navigation{
+     display: flex;
+     height: 100%;
+     align-items: center;
+
+ }
+
+ .navbar-navigation-links ul { /*child of navbar-navigation-items*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*puts items side by side*/
+}
+
+.navbar-navigation-links li{
+    padding: 0 .5rem; /*space between the links*/
+}
+
+ .navbar-navigation-links a{
+    color: white;
     text-decoration: none;
-    font-size: 20px;
+
+ }
+
+ .navbar-navigation-links a:hover,
+ .navbar-navigation-links a:active{
+     color: rgb(240, 11, 182);
+ }
+  /* .navbar-links {
+    text-decoration: none;
+    font-size: 15px;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     color: rgb(240, 11, 182);
-    /*min-height: 10vh;*/
-    font-family: "Times New Roman", Times, serif;;
+    min-height: 10vh;
+    font-family: "Times New Roman", Times, serif;
     
-}
+} */

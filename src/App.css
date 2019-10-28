@@ -9,6 +9,10 @@
     height: 75px;
     
  }
+
+ .navbar-logo {
+     margin-left: 0.5rem;
+ }
   
  .navbar-logo a{
      color: white;
@@ -62,3 +66,27 @@
     font-family: "Times New Roman", Times, serif;
     
 } */
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button-line {
+    width: 24%;
+    height: 1px;
+    background:white;
+
+}

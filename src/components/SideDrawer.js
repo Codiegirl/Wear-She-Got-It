@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const sideDrawer = props => (
-    <nav>
+    <nav className="side-drawer">
         <ul>
         <li>
                 <Link to="/homepage" className="navbar-links">Where She Got It</Link>

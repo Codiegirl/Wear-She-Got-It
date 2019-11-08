@@ -13,7 +13,7 @@ import './App.css'
 function App() {
   return (
     <Router>
-    <div>
+    <div style={{height: '100'}}>
       <NavBar/>
       <SideDrawer/>
       <Route path="/homepage" component={HomePage} exact/>

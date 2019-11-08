@@ -1,3 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 .navbar-container {
     overflow: hidden;
     position: fixed;
@@ -90,6 +98,15 @@
     height: 2px;
     background:white;
     
+}
 
+.side-drawer {
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400;
 
 }

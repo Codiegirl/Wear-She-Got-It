@@ -11,7 +11,7 @@
  }
 
  .navbar-logo {
-     margin-left: 0.5rem;
+     margin-left: 1rem;
  }
   
  .navbar-logo a{
@@ -41,7 +41,7 @@
 }
 
 .navbar-navigation-links li{
-    padding: 0 .5rem; /*space between the links*/
+    padding: 0.5rem; /*space between the links*/
 }
 
  .navbar-navigation-links a{
@@ -70,7 +70,7 @@
 .toggle-button {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 24px;
     width: 30px;
     background: transparent;
@@ -85,8 +85,10 @@
 }
 
 .toggle-button-line {
-    width: 24%;
-    height: 1px;
+    width: 100%;
+    height: 2px;
     background:white;
+    
+
 
 }

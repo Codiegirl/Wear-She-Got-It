@@ -8,8 +8,8 @@ export default class DrawerToggleButton extends React.Component {
     <div>
     <button className="toggle-button">
         <div className="toggle-button-line">text</div>
-        <div className="toggle-button-line">&nbsp;</div>
-        <div className="toggle-button-line">&nbsp;</div>
+        <div className="toggle-button-line">text</div>
+        <div className="toggle-button-line">text</div>
     </button>
     </div>
     

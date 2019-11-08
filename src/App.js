@@ -6,6 +6,7 @@ import HealthArticle from './components/HealthArticle'
 import HomeArticle from './components/HomeArticle'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
+import SideDrawer from './components/SideDrawer'
 import './App.css'
 
 
@@ -14,6 +15,7 @@ function App() {
     <Router>
     <div>
       <NavBar/>
+      <SideDrawer/>
       <Route path="/homepage" component={HomePage} exact/>
       <Route path="/fashion" component={FashionArticle}/>
       <Route path="/travel" component={TravelArticle}/>

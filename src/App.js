@@ -7,6 +7,7 @@ import HomeArticle from './components/HomeArticle'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import SideDrawer from './components/SideDrawer'
+import Backdrop from './components/Backdrop'
 import './App.css'
 
 
@@ -14,8 +15,9 @@ function App() {
   return (
     <Router>
     <div style={{height: '100'}}>
-      <NavBar/>
-      <SideDrawer/>
+    <NavBar/>
+    <SideDrawer/>
+    <Backdrop />
       <Route path="/homepage" component={HomePage} exact/>
       <Route path="/fashion" component={FashionArticle}/>
       <Route path="/travel" component={TravelArticle}/>

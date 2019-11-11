@@ -8,3 +8,4 @@ Trying to get the navbar to show up.
 Added SideBar component.
 Added Backdrop component.
 Added spaced and hover effect on side-drawer added
+Created function to open hamburger menu.

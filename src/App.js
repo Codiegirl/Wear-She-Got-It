@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {BrowserRouter as Router, Route,} from 'react-router-dom';
 import FashionArticle from './components/FashionArticle'
 import TravelArticle from './components/TravelArticle'
@@ -11,13 +11,37 @@ import Backdrop from './components/Backdrop'
 import './App.css'
 
 
-function App() {
-  return (
+
+
+class App extends Component {
+
+  state = {
+    sideDrawerOpen: false
+  }
+  
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return{sideDrawerOpen: !prevState.sideDrawerOpen};
+    })
+  };
+
+  render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen){
+      sideDrawer = <SideDrawer />;
+      backdrop = <Backdrop />;
+    }
+    
+    return (
+    
+  
     <Router>
     <div style={{height: '100'}}>
-    <NavBar/>
-    <SideDrawer/>
-    <Backdrop />
+    <NavBar drawerClickHandler={this.drawerToggleClickHandler}/>
+    {sideDrawer}
+    {backdrop}
       <Route path="/homepage" component={HomePage} exact/>
       <Route path="/fashion" component={FashionArticle}/>
       <Route path="/travel" component={TravelArticle}/>
@@ -26,7 +50,8 @@ function App() {
     </div>
 
     </Router>
-  );
+   );
+  }
 }
 
 export default App;

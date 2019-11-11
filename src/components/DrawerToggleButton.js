@@ -6,7 +6,7 @@ export default class DrawerToggleButton extends React.Component {
         return(
 
     <div>
-    <button className="toggle-button">
+    <button className="toggle-button" onClick={this.props.click}>
         <div className="toggle-button-line">text</div>
         <div className="toggle-button-line">text</div>
         <div className="toggle-button-line">text</div>

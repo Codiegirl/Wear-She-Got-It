@@ -10,7 +10,7 @@ export default class NavBar extends React.Component {
         <header className="navbar-container">
         <nav className="navbar-navigation">
             <div>
-                <DrawerToggleButton />
+                <DrawerToggleButton click={this.props.drawerClickHandler}/>
             </div>
             <div className="navbar-logo"><a href="/">Where She Got It</a></div>
             <div className="spacer"/>{/*to create space between the logo and links*/}
